@@ -1,0 +1,554 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "open sans";
+}
+html, body{
+ height: 100%;
+}
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 90vh;
+	padding: 40px 2%;
+	/*max-height: 1100px;*/
+	background-image: url('../imagens/bg.png');
+	background-size: cover;
+	background-position: center;
+	font-weight: 300;
+}
+
+.logo{
+	float: left;
+	width: 100%;
+	max-width: 160px;
+	height: 80px;
+	padding: 0 2%;
+	background-color: #ccc;
+}
+nav.mobile-menu {
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url(../imagens/menu.png);
+	background-size: 100% 100%;
+}
+nav.mobile-menu:hover ul{
+	opacity: 1;
+	display: block;
+}
+
+nav.mobile-menu ul{
+	opacity: 0;
+	transition: 1s;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 85px;
+	list-style-type: none;
+	text-align: center;
+}
+nav.mobile-menu ul li{
+	padding: 8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover {
+	background-color: rgb(230, 230, 230);
+}
+nav.mobile-menu ul li a{
+	color: black;
+	text-decoration: none;
+	
+}
+
+nav{
+	float: right;
+}
+header nav.desktop-menu ul {
+	list-style-type: none;
+}
+
+nav.desktop-menu ul li{
+	float: left;
+	padding: 0 20px;
+}
+
+nav.desktop-menu li a{
+	color: white;
+	text-decoration: none;
+}
+.chamada1{
+	max-width: 460px;
+	float: right;
+	margin: 140px 120px;
+}
+
+.chamada1 h2{
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+}
+.chamada1 p{
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+section.sessao1{
+	width: 100%;
+	height: 400px;
+	background-color: #472562;
+	padding: 0 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	width: 100%;
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.text-sessao1{
+	width: 30%;
+	position: relative;
+	top: 60px;
+	left: 200px;
+	float: left;
+	color:white;
+}
+
+.text-sessao1 h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.text-sessao1 p{
+	margin-top: 20px;
+	font-size: 	15px;
+}
+
+.text-sessao1 ul{
+	font-size: 15px;
+	list-style-position: inside;
+}
+.text-sessao1 ul li{
+	margin-top: 4px;
+	width: 100%;
+}
+
+.btn1-texto{
+		background-color: #FF703D;
+		width: 	145px;
+		height: 36px;
+		color: white;
+		cursor: pointer;
+		margin: 30px;
+		text-align: center;
+		line-height: 36px;
+		border-radius: 20px;
+
+}
+
+.device-sessao1{
+	position: relative;
+	top: -40px;
+	float: right;
+	width: 50%;
+	height: 102%;
+	background-image: url('../imagens/device.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.sessao2{
+	text-align: center;
+	padding: 70px 2%;
+}
+.sessao2 h2{
+	margin-bottom:10px;
+	color: #472663;
+	font-weight: normal;
+	font-size: 30px ;
+}
+.sessao2 p{
+	width: 100%;
+	max-width: 1000px;
+	display: inline-block;
+}
+.sessao2 img{
+	position: relative;
+	top: 120px;
+	-webkit-box-shadow: 8px 8px 30px 2px;
+	-moz-box-shadow: 8px 8px 30px 2px;
+	width: 100%;
+	max-width: 800px;
+}
+.sessao3{
+	width: 100%;
+}
+
+.part1{
+	color: white;
+	width: 50%;
+	text-align: center;
+	background: #835FA7;
+	float: left;
+	padding: 140px 0 90px 0;
+}
+.wraper-part1{
+	float: right;
+	max-width: 500px;
+	padding: 10px 2%;
+}
+.part1 h2{
+	padding: 0 3%;
+	float: left;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 5px;
+	font-size: 26px;
+
+}
+.part1 p{
+	font-size: 15px;
+	line-height: 35px;
+}
+
+.part2{
+	width: 50%;
+	float: left;
+	padding: 140px 0 90px 0;
+	background-color:  ;
+}
+
+.sobre-autor{
+	width: 100%;
+	max-width: 600px;
+	float: left;
+	padding-left: 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	width: 60%;
+	float: left;
+
+}
+
+.img-autor{
+	background-image: url('../imagens/foto.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.titulo-autor h2{
+	color: #232323;
+	font-weight: 100 ;
+	font-size: 26px;
+	padding-right: 20px;
+}
+
+
+
+.img-autor{
+	position: relative;
+	top: -4px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: gray;
+	border-radius: 20px;
+}
+ .texto-autor{
+ 	float: left;
+ 	margin-top: 10px;
+ }
+ .slider-bullets{
+ 	margin-left: 30px;
+ 	float: left;
+ 	width: 70%;
+ 	height: 30px;
+ 	background-color: ;
+
+ }
+	.slider-bullets span{
+		width: 16px;
+		height: 16px;
+		background-color: #2222;
+		border-radius: 8px;
+		float: left;
+		margin-right: 9px;
+		margin-top: 5px;
+		cursor: pointer;
+		
+	}
+
+	section.sessao4{
+		background-color: #472563;
+		padding: 100px 0;
+	}
+	.form{
+		width: 50%;
+		float: left;
+		color: white;
+		padding-left: 15px;
+
+	}
+	.form h2{
+		font-size: 23px;
+		font-weight: 300;
+	}
+
+	.form p{
+		font-size: 15px;
+		font-weight: 300;
+		max-width: 480px;
+		padding-right: 10%;
+	}
+
+	.form form input[type=text]{
+		width: 90%;
+		max-width: 480px;
+		margin-top: 4px;
+		height: 58;
+		padding-left: 8px;
+		line-height: 58px;
+		border: 1px solid rgb(200, 200, 200);
+	}
+	.form form textarea{
+		width: 90%;
+		max-width: 480px;
+		margin-top: 8px;
+		padding: 15px;
+		border: 1px solid rgb(200, 200, 200);
+		height: 160px;
+	}
+	.form form input[type=submit]{
+		border: 0;
+		background-color: #FF703D;
+		width: 	145px;
+		height: 36px;
+		color: white;
+		cursor: pointer;
+		margin: 15px;
+		border-radius: 20px;
+		font-size: 16px;
+	}
+
+	.map-wraper{
+		padding: 0 15px;
+		float: left;
+		width: 50%;
+		color: white;
+	}
+	
+	.map-wraper h2{
+		font-size: 23px;
+		font-weight: 300;
+	}
+
+	.map-wraper3{
+		margin-top: 10px;
+		width: 	100%;
+		max-width: 	480px;
+		position: relative;
+	}
+	.map-wraper2{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		padding-top: 100%;
+		background-color: 	green;
+	}
+	.map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		border: 5px solid rgb(200, 200, 200);
+	}
+	footer{
+		padding: 40px 2%;
+		background-color: #192123;
+		color: white;
+		font-size: 14px;
+	}
+	footer p:nth-of-type(1){
+		float: left;
+	}
+
+	footer p:nth-of-type(2){
+		float: right;
+	}
+
+	@media screen and (max-width:580px){
+
+	.sessao2 img{
+		position: relative;
+		top: 60px;
+	
+	}
+	.part1{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.part2{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.wraper-titulo-autor{
+		width: 75%;
+		float: left;
+
+	}
+	.titulo-autor h2{
+		font-size: 20px;
+	}
+		footer{
+		text-align: center;
+	}
+	footer p:nth-of-type(1){
+		float: none;
+	}
+
+	footer p:nth-of-type(2){
+		float: none;
+		margin-top: 5px;
+	
+
+}
+	
+
+@media screen and (max-width: 768px){
+	header{
+	width: 100%;
+	height: auto;
+	min-height: 90vh;
+	padding: 40px 2%;
+	
+}
+
+	nav.desktop-menu{
+		display: none;
+	}
+	nav.mobile-menu{
+		margin: 6px 3%;
+		display: block;
+	}
+	header nav.mobile-menu ul{
+	list-style-type: none;
+	}
+
+	header nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: black;
+	}
+
+	.chamada1{
+		width: 100%;
+		max-width: none;
+		text-align: center;		
+		float: none;
+		margin: 100px 0;
+		
+	}
+	.chamada1 h2{
+		font-size: 30px;
+	}
+	.chamada1 p{
+		color: white;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	section.sessao1{
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+
+	.text-sessao1{
+		width: 100%;
+		margin-top: 0;
+		position: static;
+		padding-left: 0;
+		float: none;
+		display: inline-block;
+	}
+	.text-sessao1 ul{
+		display: inline-block;
+
+	}
+
+	.text-sessao1 ul li{
+		float: none;
+		text-align: left;
+	}
+
+	.btn1-texto{
+		margin:10px auto;
+		float: none;
+		
+	}
+
+	.device-sessao1{
+		display: none;
+	}
+	.sessao2 {
+		padding: 40px 3%;
+	}
+	section.sessao4 .container{
+		text-align: center;
+		display: inline-block;
+	}
+
+	.form p{
+		padding: 0;
+		display: inline-block;
+
+	}
+
+	.form{
+		float: none;
+		width: 100%;
+	}
+	.map-wraper3{
+		padding-top: 80%;
+		width: 80%;
+		max-width: none;
+		display: inline-block;
+	}
+	.map-wraper2{
+		height: 100%;
+		padding-top: 0;
+	}
+
+	.map-wraper{
+		padding: 0 4%;
+		margin-top: 40px;
+		float: none;
+		width: 100%;
+	}
+
+
+}
